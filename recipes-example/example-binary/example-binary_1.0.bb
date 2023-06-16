@@ -7,7 +7,7 @@ SRC_URI = "file://example-binary.c file://CMakeLists.txt"
 S = "${WORKDIR}"
 
 DEPENDS = "libfoo"
-RDEPENDS:${PN}-dev = "libfoo-staticdev"
+#RDEPENDS:${PN}-dev = "libfoo-staticdev libfoo-dev"
 
 inherit cmake
 
