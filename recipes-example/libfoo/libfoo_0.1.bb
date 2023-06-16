@@ -6,4 +6,6 @@ FILESEXTRAPATHS:prepend = "${THISDIR}/files:"
 SRC_URI = "file://foo.h file://foo.c file://CMakeLists.txt"
 S = "${WORKDIR}"
 
+RDEPENDS:${PN}-staticdev = ""
+
 inherit cmake

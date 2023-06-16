@@ -5,6 +5,8 @@ project(Libfoo VERSION 0.1)
 add_library(foo STATIC foo.c foo.h)
 set_property(TARGET foo PROPERTY PUBLIC_HEADER foo.h)
 
+include(GNUInstallDirs)
+
 install(TARGETS foo
 	EXPORT fooTargets
 	ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
